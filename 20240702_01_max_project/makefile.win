@@ -1,0 +1,38 @@
+# Project: 20240702_01_max_project
+# Makefile created by Red Panda C++ 2.26.2249
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = 20240702_01_max_project_private.res
+OBJ      = max.o main.o $(RES)
+LINKOBJ  = max.o main.o 20240702_01_max_project_private.res
+CLEANOBJ  =  max.o main.o  20240702_01_max_project_private.res 20240702_01_max_project.exe
+LIBS     = 
+INCS     =  
+CXXINCS  =  
+BIN      = 20240702_01_max_project.exe
+CXXFLAGS = $(CXXINCS)  -g3 -pipe -Wall -D__DEBUG__
+CFLAGS   = $(INCS)  -g3 -pipe -Wall -D__DEBUG__
+RM       = del /q /f
+WINDRESFLAGS  = 
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	-$(RM) $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+max.o: max.c
+	$(CC) -c max.c -o max.o $(CFLAGS) 
+
+main.o: main.c
+	$(CC) -c main.c -o main.o $(CFLAGS) 
+
+20240702_01_max_project_private.res: 20240702_01_max_project_private.rc 
+	$(WINDRES) -i 20240702_01_max_project_private.rc --input-format=rc -o 20240702_01_max_project_private.res -O coff $(WINDRESFLAGS) 
+

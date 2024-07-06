@@ -1,0 +1,15 @@
+{
+    "breakpoints": [
+        {
+            "breakpoint_type": 0,
+            "condition": "",
+            "enabled": true,
+            "filename": "max.h",
+            "line": 7,
+            "timestamp": "1719940422819"
+        }
+    ],
+    "timestamp": "1720251072418",
+    "watchvars": [
+    ]
+}

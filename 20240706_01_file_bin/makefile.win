@@ -1,0 +1,35 @@
+# Project: 20240706_01_file_bin
+# Makefile created by Red Panda C++ 2.26.2249
+
+CPP      = g++.exe
+CC       = gcc.exe
+WINDRES  = windres.exe
+RES      = 20240706_01_file_bin_private.res
+OBJ      = 20240706_01_file_bin.o $(RES)
+LINKOBJ  = 20240706_01_file_bin.o 20240706_01_file_bin_private.res
+CLEANOBJ  =  20240706_01_file_bin.o  20240706_01_file_bin_private.res 20240706_01_file_bin.exe
+LIBS     = 
+INCS     =  
+CXXINCS  =  
+BIN      = 20240706_01_file_bin.exe
+CXXFLAGS = $(CXXINCS)  -g3 -pipe -Wall -D__DEBUG__
+CFLAGS   = $(INCS)  -g3 -pipe -Wall -D__DEBUG__
+RM       = del /q /f
+WINDRESFLAGS  = 
+
+.PHONY: all all-before all-after clean clean-custom
+
+all: all-before $(BIN) all-after
+
+clean: clean-custom
+	-$(RM) $(CLEANOBJ) > NUL 2>&1
+
+$(BIN): $(OBJ)
+	$(CC) $(LINKOBJ) -o $(BIN) $(LIBS)
+
+20240706_01_file_bin.o: 20240706_01_file_bin.c student.h
+	$(CC) -c 20240706_01_file_bin.c -o 20240706_01_file_bin.o $(CFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+20240706_01_file_bin_private.res: 20240706_01_file_bin_private.rc 
+	$(WINDRES) -i 20240706_01_file_bin_private.rc --input-format=rc -o 20240706_01_file_bin_private.res -O coff $(WINDRESFLAGS) 
+

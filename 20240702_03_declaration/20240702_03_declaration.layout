@@ -1,0 +1,38 @@
+[
+    {
+        "caretX": 1,
+        "caretY": 3,
+        "filename": "D:/lzycode/c_cpp/wengkai_c/20240702_03_declaration/max.c",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 7,
+        "caretY": 12,
+        "filename": "D:/lzycode/c_cpp/wengkai_c/20240702_03_declaration/max.h",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 7,
+        "caretY": 6,
+        "filename": "D:/lzycode/c_cpp/wengkai_c/20240702_03_declaration/main.h",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    },
+    {
+        "caretX": 58,
+        "caretY": 3,
+        "filename": "D:/lzycode/c_cpp/wengkai_c/20240702_03_declaration/main.c",
+        "focused": false,
+        "isOpen": false,
+        "leftChar": 1,
+        "topLine": 1
+    }
+]

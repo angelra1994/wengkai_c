@@ -1,0 +1,32 @@
+[
+    {
+        "caretX": 2,
+        "caretY": 22,
+        "filename": "D:/lzycode/c_cpp/wengkai_c/20240702_02_head_file/main.c",
+        "focused": true,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 0,
+        "topLine": 25
+    },
+    {
+        "caretX": 28,
+        "caretY": 3,
+        "filename": "D:/lzycode/c_cpp/wengkai_c/20240702_02_head_file/max.c",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 2,
+        "topLine": 1
+    },
+    {
+        "caretX": 26,
+        "caretY": 5,
+        "filename": "D:/lzycode/c_cpp/wengkai_c/20240702_02_head_file/max.h",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 1,
+        "topLine": 1
+    }
+]
