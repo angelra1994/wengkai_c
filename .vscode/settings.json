@@ -4,6 +4,11 @@
         "*.alizec": "c",
         "max.h": "c",
         "stdio.h": "c",
-        "student.h": "c"
+        "student.h": "c",
+        "array.h": "c",
+        "array": "c",
+        "initializer_list": "c",
+        "cstdlib": "c",
+        "stdlib.h": "c"
     }
 }

@@ -1,10 +1,20 @@
 [
     {
-        "caretX": 1,
-        "caretY": 1,
+        "caretX": 57,
+        "caretY": 75,
         "filename": "D:/lzycode/c_cpp/wengkai_c/20240706_01_file_bin/20240706_01_file_bin.c",
-        "focused": true,
+        "focused": false,
         "isOpen": true,
+        "leftChar": 1,
+        "order": 0,
+        "topLine": 52
+    },
+    {
+        "caretX": 26,
+        "caretY": 4,
+        "filename": "D:/lzycode/c_cpp/wengkai_c/20240706_01_file_bin/student.h",
+        "focused": false,
+        "isOpen": false,
         "leftChar": 1,
         "topLine": 1
     }
