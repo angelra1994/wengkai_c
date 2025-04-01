@@ -68,8 +68,9 @@ int main()
     char *pstr;
     // 64位的系统，指针变量需要8个字节[8] --> [5]
     char *pstr2 = new char[5];
-    printf("pstr2[0](%%s): %s, pstr2[0](%%d): %d\n", pstr2[0], pstr2[0]);
-    printf("pstr2[4](%%s): %s, pstr2[4](%%d): %d\n", pstr2[4], pstr2[4]);
+    printf("pstr2(%%s): %s, pstr2(%%p): %p, strlen(pstr2)(%%lld): %lld\n", pstr2, pstr2, strlen(pstr2));
+    printf("pstr2[0](%%c): %c, pstr2[0](%%d): %d\n", pstr2[0], pstr2[0]);
+    printf("pstr2[4](%%c): %c, pstr2[4](%%d): %d\n", pstr2[4], pstr2[4]);
     // [8] --> [5](堆)
     int arr[10];
 
@@ -125,7 +126,7 @@ int main()
     // x 占用 [4]
     // y 占用 [1] y2-y4[3], c语言结构体的自然对齐
     // z 占用 [8] --> 指向了长度为 [10] 的内存
-    printf("%d\n", sizeof(m));
+    printf("%lld\n", sizeof(m));
     // 01 00 00 00 
     // 50 00 00 00
     // 8个字节的指针内容， -->  48 49 50 51 52 53 54 55 56 
