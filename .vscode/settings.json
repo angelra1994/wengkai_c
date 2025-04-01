@@ -9,6 +9,10 @@
         "array": "c",
         "initializer_list": "c",
         "cstdlib": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "chrono": "cpp",
+        "typeinfo": "cpp",
+        "ostream": "cpp",
+        "random": "cpp"
     }
 }
